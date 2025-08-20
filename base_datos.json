@@ -1,1 +1,17 @@
+#base de datos (Historial)
 
+{
+    "juan david": {
+        "cedula": "10994363634",
+        "email": "gutierrezag@gmail.com",
+        "edad": "17",
+        "telefono_movil": "3015365252",
+        "telefono_fijo": "124565",
+        "pais": "colombia",
+        "departamento": "santander",
+        "ciudad": "bucaramanga",
+        "direccion": "la esmeralda",
+        "productos": {},
+        "movimientos": []
+    }
+}
