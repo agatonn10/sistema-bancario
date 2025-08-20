@@ -5,7 +5,7 @@ ARCHIVO_DATOS = "base_datos.json"
 base_datos = cargar_datos()
 
 #registro de datos
-clientes = {}
+clientes = base_datos
 #datos:
 def crear_cuenta():
     cc = input("cedula: ")
@@ -19,8 +19,8 @@ def crear_cuenta():
     ciudad = input("ciudad: ")
     direccion = input("dirección: ")
 
-    clientes[cc] = {
-        "nombre": nombre,
+    clientes[nombre] = {
+        "cedula": cc,
         "email": email,
         "edad": edad,
         "telefono_movil": tel_movil,
