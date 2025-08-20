@@ -1,3 +1,9 @@
+#funcion de guardado al json de base de datos
+from data import guardado, cargar_datos
+
+ARCHIVO_DATOS = "base_datos.json"
+base_datos = cargar_datos()
+
 #registro de datos
 clientes = {}
 #datos:
@@ -104,16 +110,22 @@ while True:
 
     if opcion == "1":
         crear_cuenta()
+        guardado(base_datos)
     elif opcion == "2":
         depositar()
+        guardado(base_datos)
     elif opcion == "3":
         solicitar_credito()
+        guardado(base_datos)
     elif opcion == "4":
         retirar()
+        guardado(base_datos)
     elif opcion == "5":
         pagar_cuota_credito()
+        guardado(base_datos)
     elif opcion == "6":
         cancelar_cuenta()
+        guardado(base_datos)
     elif opcion == "7":
         break
     else:
